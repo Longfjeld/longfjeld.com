@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# BBEdit og lokale editorfiler
+*.bbprojectd
+*.bbproject
+longfjeld-webserver-dokumentasjon.md
+GitHub-Pages-longfjeld-migrering.md
+
+# Logger og midlertidige filer
+*.log
+*.tmp
+*~
+
+# Lokale hemmeligheter
+.env
+.env.*
+!.env.example
+
+# Node, dersom prosjektet senere får byggetrinn
+node_modules/
+dist/
