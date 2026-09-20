@@ -391,6 +391,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   gap: 16px;
+  width: min(100%, 760px);
+  margin-inline: auto;
   color: var(--faint);
   font-size: 0.65rem;
   letter-spacing: 0.06em;
