@@ -170,3 +170,23 @@ Jekyll
 ```
 
 GitHub Pages kan publisere HTML- og CSS-filene direkte fra repoet.
+
+
+
+Shortlist - github kommandoer:
+
+
+```
+git status
+git diff (valgfritt)
+git add .
+git status
+git commit -m "Tekst til Commit"
+git push origin main
+```
+Zip fra Commit:
+
+```
+git archive --format=zip --output=../longfjeld-current.zip HEAD
+```
+

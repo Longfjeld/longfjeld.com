@@ -6,6 +6,7 @@
 # BBEdit og lokale editorfiler
 *.bbprojectd
 *.bbproject
+workBookLongfjeld.md
 
 # Logger og midlertidige filer
 *.log
