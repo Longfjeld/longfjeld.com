@@ -25,6 +25,7 @@
   --warm-glow: rgba(216, 194, 174, 0.22);
 
   --content-width: 1120px;
+  --layout-width: 760px;
   --reading-width: 670px;
   --radius-large: 30px;
   --radius-medium: 20px;
@@ -77,6 +78,8 @@ a {
 }
 
 .site-header {
+  width: min(100%, var(--layout-width));
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -153,11 +156,11 @@ a {
 .home-intro,
 .project-intro,
 .project-sections {
-  width: min(100%, var(--reading-width));
+  width: min(100%, var(--layout-width));
 }
 
 .eyebrow {
-  margin: 0 0 15px;
+  margin: 0 0 20px;
   color: var(--quiet);
   font-size: 0.66rem;
   font-weight: 700;
@@ -173,17 +176,19 @@ p {
 }
 
 h1 {
-  margin-bottom: 20px;
+  max-width: var(--layout-width);
+  margin-bottom: 28px;
   color: var(--text);
-  font-size: clamp(2.65rem, 6.2vw, 4.55rem);
+  font-size: clamp(2.65rem, 5.8vw, 4.45rem);
   font-weight: 570;
-  letter-spacing: -0.052em;
-  line-height: 0.98;
+  letter-spacing: -0.034em;
+  line-height: 1.055;
+  text-wrap: balance;
 }
 
 .home-intro > p,
 .project-lead {
-  max-width: 610px;
+  max-width: var(--reading-width);
   margin-bottom: 0;
   color: var(--muted);
   font-size: clamp(1.05rem, 1.7vw, 1.18rem);
@@ -202,8 +207,8 @@ h1 {
   padding: 18px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 18px;
+  justify-content: flex-start;
+  gap: 16px;
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-medium);
   color: var(--text);
@@ -272,7 +277,7 @@ h1 {
 }
 
 .project-content {
-  width: min(100%, var(--reading-width));
+  width: min(100%, var(--layout-width));
 }
 
 .project-sections {
@@ -300,6 +305,7 @@ h1 {
 
 .info-section p,
 .info-section li {
+  max-width: var(--reading-width);
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.66;
@@ -309,13 +315,23 @@ h1 {
   margin-bottom: 0;
 }
 
-.info-section ul {
+.info-section ul,
+.info-section ol {
+  max-width: var(--reading-width);
   margin: 12px 0 0;
-  padding-left: 1.15rem;
+  padding-left: 1.25rem;
 }
 
 .info-section li + li {
   margin-top: 6px;
+}
+
+.info-note {
+  margin-top: 18px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(32, 35, 38, 0.16);
+  color: var(--quiet) !important;
+  font-size: 0.9rem !important;
 }
 
 .actions {
@@ -406,6 +422,7 @@ h1 {
   }
 
   .site-header {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -426,6 +443,15 @@ h1 {
   .site-main {
     align-items: flex-start;
     padding: 48px 7px 38px;
+  }
+
+  .eyebrow {
+    margin-bottom: 17px;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+    line-height: 1.06;
   }
 
   .project-grid {

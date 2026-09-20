@@ -254,14 +254,29 @@ Den skal ikke automatisk endres som følge av generelle justeringer i nettstedet
 
 Teksten:
 
-> Små verktøy.  
-> Bygget for å være nyttige.
+> Små. Nyttige. Verktøy.
 
-oppleves i dagens utforming som for tett.
+er den valgte hero-teksten på forsiden.
 
-Ved senere justering skal dette vurderes som et samlet typografisk problem. Aktuelle egenskaper som skal vurderes sammen er blant annet linjeavstand, bokstavmellomrom, skriftgrad, vekt og avstand til omkringliggende elementer.
+Hero-teksten skal ha tydeligere optisk luft enn den tidligere utformingen. Linjeavstand, bokstavmellomrom, skriftgrad, vekt og avstand til `PROSJEKTER` og ingressen skal vurderes som én komposisjon. Linjebryting skal i utgangspunktet være responsiv og ikke tvinges uten en tydelig typografisk grunn.
 
 Det skal ikke gjøres en isolert endring av `letter-spacing` uten at helheten vurderes.
+
+### 13.3 Felles venstreakse og innholdsbredde
+
+På nettbrett og større skjermer skal `.brand` og hovedinnholdet følge en tydelig felles venstreakse. Dette gjelder blant annet `PROSJEKTER`, hovedoverskrift og prosjektinnhold.
+
+Layouten kan utnytte mer av tilgjengelig bredde enn brødteksten. Brødtekst skal fortsatt holdes på en moderat linjelengde, mens overskrifter, navigasjon og prosjektkort kan bruke en bredere layoutkolonne.
+
+På telefon beholdes den etablerte kompakte layouten så langt som mulig.
+
+### 13.4 Prosjektkort på forsiden
+
+Prosjektkort skal ha konsekvent avstand mellom tittel og beskrivelse. Forskjeller i tekstmengde skal primært gi forskjellig restplass nederst i kortet, ikke forskjellig avstand mellom tittel og tekst.
+
+Beskrivelsen for Tekstilig er:
+
+> Et praktisk kartotek over tekstiler du har på lager.
 
 ## 14. Kontroll ved videre utvikling
 
